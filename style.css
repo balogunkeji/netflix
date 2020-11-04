@@ -1,124 +1,124 @@
 *,
 *::before,
-*::after{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-html{
-    font-size: 10px;
+html {
+  font-size: 10px;
 }
 
-body{
-    background-color: black;
+body {
+  background-color: black;
 }
 
-#bg-image{
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../image/bg.jpg");
-    max-width: 100vw;
-    height: 60vh;
-    background-position: center;
-    background-size: cover;
-    top: 0;
-    border-bottom: 10px solid grey;
+#bg-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../image/bg.jpg");
+  max-width: 100vw;
+  height: 90vh;
+  background-position: center;
+  background-size: cover;
+  top: 0;
+  border-bottom: 10px solid grey;
 }
 
-.top{
+.top {
+  display: flex;
+  padding: 2rem 2rem;
+  justify-content: space-between;
+}
+
+img[alt="net"] {
+  margin-top: -6rem;
+  /* margin-left: 1.5rem; */
+}
+
+input[type="button"] {
+  padding: 0.5rem;
+  text-transform: capitalize;
+  background-color: red;
+  border: none;
+  font-size: 1.6rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+.main-tex {
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  margin-top: 2rem;
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.h2 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+label{
     display: flex;
-    padding: 2rem 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="email"] {
+  padding: 15px 15px;
+  width: 40%;
+  border: none;
+  font-size: 1.4rem;
+  color: gainsboro;
+  margin-top: 1rem;
+}
+
+button {
+  padding: 15px 15px;
+  margin-top: 1rem;
+  width: 20%;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  background-color: red;
+  border: none;
+}
+
+#tv, #id{
+    border-bottom: 10px solid grey;
+    display: flex;
+    max-width: 100vw;
     justify-content: space-between;
+    padding: 20px 50px 50px 50px;
+    align-items: center;
+    /* margin: 2rem 1rem 1rem 1rem; */
 }
 
-img[alt="net"]{
-    margin-top: -6rem;
-    /* margin-left: 1.5rem; */
-}
-
-input[type="button"]{
-    padding: .5rem;
-    text-transform: capitalize;
-    background-color: red;
-    border: none;
-    font-size: 1.6rem;
-
-}
-
-input:focus{
-    outline: none;
-}
-
-.main-tex{
-    text-align: center;
-    color: white;
-}
-
-h1{
-    margin-top: 1rem;
-    font-size: 3.2rem;
-    margin-bottom: 2rem;
-    font-weight: 500;
-}
-
-.h2{
-    margin-bottom: 1.5rem;
-}
-
-h2{
-    font-size: 2rem;
-}
-
-input[type="email"]{
-    padding: 15px 15px;
-    width: 90%;
-    border: none;
-    font-size: 1.4rem;
-    color: gainsboro;
-    margin-top: 1rem;
-}
-
-button{
-    padding: 15px 1px;
-    margin-top: .5rem;
-    width: 48%;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 1.6rem;
-    background-color: red;
-    border: none;
-
-}
-
-span{
-    margin-left: 8px;
-}
-
-.tv-img{
-    position: relative;
-    z-index: 2;
-    display: block;
-}
-
-section{
-    color: white;
-}
-.tv-img img:focus, video:focus{
-    outline: none;
+.tv-img img:focus,
+video:focus {
+  outline: none;
 }
 
 video{
     position: absolute;
-    top: 45px;
-    left: 80px;
-    max-width: 70%;
-    max-height: 70%;
-    width: 100%;
-    height: 100%;
-    border: 0;
-    /* transform: translate(-50%, -50%); */
+    top: 105%;
+    left: 52%;
+    max-width: 50%;
+    max-height: 45%;
 }
 
-.tv-img img{
+.tv-img img {
     max-width: 90%;
     width: 100%;
     height: auto;
@@ -127,40 +127,39 @@ video{
     position: relative;
     z-index: 2;
     display: block;
-    margin: 2rem 2rem 4rem 2rem;
+  }
 
-}
-
-
-
-#tv{
-    max-width: 100vw;
-    height: auto;
-    position: relative;
-    border-bottom: 10px solid gray;
-}
-
-h3{
-    text-align: center;
-    font-size: 3rem;
+  .tv{
+    color: white;
     text-transform: capitalize;
-    padding-top: 5rem;
+    padding: 50px;
+    text-align: justify;
+    text-transform: capitalize;
     line-height: 1.1;
-    margin-bottom: 0.5rem;
+    word-spacing: 2.5px;
 }
 
-p{
-    text-align: center;
-    font-size: 2rem;
-    text-transform: capitalize;
+  .tv h3 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    margin-top: -8rem;
+  }
+  
+  p {
+    font-size: 2.5rem;
     position: absolute;
     z-index: 3;
-}
+  }
 
-img[alt="mobile"]{
-    max-width: 80%;
-    width: 100%;
-    margin: 50px;
-    position: relative;
-}
+/* 
 
+
+
+
+
+img[alt="mobile"] {
+  max-width: 80%;
+  width: 100%;
+  margin: 50px;
+  position: relative;
+} */
